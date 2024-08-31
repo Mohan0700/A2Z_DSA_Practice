@@ -13,6 +13,8 @@ int countDigits(int n){
 
 // O(1) complexity but will only work for positive not for 0 and negative numbers.
 int countDigits2(int n){
+    if(n==0) return 0;
+    else if(n<0) n*=-1;
     return (int)(log10(n)+1);
 }
 
